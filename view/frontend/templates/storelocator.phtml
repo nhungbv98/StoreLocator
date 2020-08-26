@@ -10,8 +10,8 @@ $helper = $block->googleMapsStoreHelper;
 
 <?php
 if (true):
-//    $standard_lat = $helper->getGMapStandardLatitude();
-//    $standard_long = $helper->getGMapStandardLongitude();
+    $standard_lat = $helper->getGMapStandardLatitude();
+    $standard_long = $helper->getGMapStandardLongitude();
     $store = $block->getAllStores();
     $storelocator = json_encode($store->getData());
     $timer = $block->getAllTime();
